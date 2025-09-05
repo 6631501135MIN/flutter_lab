@@ -76,7 +76,7 @@ flutter:
   fonts:
     - family: FjallaOne-Regular
       fonts:
-        - asset: font/FjallaOne-Regular.ttf
+        - asset: fonts/FjallaOne-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

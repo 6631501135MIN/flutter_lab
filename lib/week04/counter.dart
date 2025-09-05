@@ -22,7 +22,7 @@ class _CounterState extends State<Counter> {  // Fixed: Changed from _MyWidgetSt
           child: Text(
             // message,
             'Counter = $count',
-            style: TextStyle(fontSize: 22, color: Color.fromARGB(255, 1, 1, 20)),
+            style: TextStyle(fontSize: 22, color: Color.fromARGB(255, 152, 79, 192)),
           ),
         ),
         floatingActionButton: FloatingActionButton(

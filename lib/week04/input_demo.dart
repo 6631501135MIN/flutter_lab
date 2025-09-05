@@ -4,11 +4,10 @@ class InputDemo extends StatefulWidget {
   const InputDemo({super.key});
 
   @override
-  State<InputDemo> createState() => _InputDemoState(); // Fixed: Added < and _
+  State<InputDemo> createState() => _InputDemoState();
 }
 
 class _InputDemoState extends State<InputDemo> {
-  // Fixed: Removed extra space
   //State variables
   String message = '';
   TextEditingController tcName = TextEditingController();
@@ -23,7 +22,8 @@ class _InputDemoState extends State<InputDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Input Demo')),
+      appBar: AppBar(title: Text('Input Demo', style: TextStyle(fontFamily: 'FjallaOne-Regular')),
+      ),
       body: Column(
         children: [
           Padding(
@@ -42,7 +42,10 @@ class _InputDemoState extends State<InputDemo> {
           ),
           ElevatedButton(onPressed: () => updateText(), child: Text('OK')),
           SizedBox(height: 16),
-          Text(message),
+          Text(
+            message,
+            style: TextStyle(fontFamily: 'FjallaOne-Regular', fontSize: 22),
+          ), // Fixed: Added closing parenthesis for Text widget
         ],
       ),
     );

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Assignment1 extends StatefulWidget {
-  const Assignment1({super.key});
+class Assignment2 extends StatefulWidget {
+  const Assignment2({super.key});
 
   @override
-  State<Assignment1> createState() => _Assignment1State();
+  State<Assignment2> createState() => _Assignment2State();
 }
 
-class _Assignment1State extends State<Assignment1> {
+class _Assignment2State extends State<Assignment2> {
   final TextEditingController tcUser = TextEditingController();
   final TextEditingController tcPass = TextEditingController();
 

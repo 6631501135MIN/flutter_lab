@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lab/week04/input_demo.dart';
+import 'package:flutter_lab/week04/assignment1.dart';
 
 void main() {
-  runApp(MaterialApp(home: InputDemo()));
+  runApp(const MaterialApp(
+    home: Assignment1(),
+  ));
 }

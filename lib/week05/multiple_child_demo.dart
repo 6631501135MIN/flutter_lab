@@ -15,12 +15,23 @@ class MultipleChildDemo extends StatelessWidget {
           //   Container(width: 100, height: 200, color: Colors.yellow),
           //   Container(width: 100, height: 100, color: Colors.red),
           // ],
+          // children: [
+          //   Container(width: 100, height: 100, color: Colors.green),
+          //   Spacer(flex: 1),
+          //   Container(width: 100, height: 200, color: Colors.yellow),
+          //   Spacer(flex: 2),
+          //   Container(width: 100, height: 100, color: Colors.red),
+          // ],
           children: [
-            Container(width: 100, height: 100, color: Colors.green),
-            Spacer(flex: 1),
+            Expanded(
+              flex: 1,
+              child: Container(width: 100, height: 100, color: Colors.green),
+            ),
             Container(width: 100, height: 200, color: Colors.yellow),
-            Spacer(flex: 2),
-            Container(width: 100, height: 100, color: Colors.red),
+            Expanded(
+              flex: 2,
+              child: Container(width: 100, height: 100, color: Colors.red),
+            ),
           ],
         ),
       ),

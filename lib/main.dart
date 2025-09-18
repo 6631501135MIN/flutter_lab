@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lab/week05/random_demo.dart';
+import 'package:flutter_lab/week05/assignment3.dart';
 
 void main() {
-  runApp(MaterialApp(home: RandomDemo()));
+  runApp(MaterialApp(home: Assignment3()));
 }

@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lab/week08/fruit.dart';
 
 class Page2 extends StatelessWidget {
-  const Page2({super.key});
+  Fruit fruit;
+
+  Page2({super.key, required this.fruit});
 
   @override
   Widget build(BuildContext context) {
-    //get the data from the previous page
-    Map<String, dynamic> data =
-        ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
     return Scaffold(
       appBar: AppBar(title: Text('Page 2')),
       body: Column(
         children: [
-          Text('Name: ${data['name']}'),
-          Text('Price: ${data['price']}'),
-          Text('Origin date: ${data['date'][0]}'),
-          Text('Expiration date: ${data['date'][1]}'),
+          Text('Name: ${fruit.name}'),
+          Text('Price: ${fruit.price}'),
+          Text('Origin date: ${fruit.date[0]}'),
+          Text('Expiration date: ${fruit.date[1]}'),
+          Text('Country: ${fruit.country}'),
           FilledButton(
             onPressed: () {
               Navigator.pop(context);
